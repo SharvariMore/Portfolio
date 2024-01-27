@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharvari More || My Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <link rel="icon" href="img/LinkedIn Profile.jpeg" type="image/x-icon">
+  <link rel="shortcut icon" href="img/LinkedIn Profile.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <a href="#" class="logo"><span>S</span>harvari</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <!--<li><a href="#blog">Blog</a></li>-->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="right-header">
+            <a href="sms:+17865578650" title="Click to send a text message" class="btn">Let's chat <i class='bx bx-message-dots' ></i></a>
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="hero-info">
+            <h3>Welcome To my PortFolio</h3>
+            <h1>Hi I'm Sharvari</h1>
+
+            <div class="text-animate">
+                <h2>Frontend Developer</h2>
+            </div>
+
+            <p>Dynamic Frontend Developer with expertise in web development and client services, achieving a 40% efficiency boost through UI development using HTML, CSS, Bootstrap, JavaScript, and React. Successful project experience in designing dynamic React websites and optimizing email services for notable improvements. Experienced mentor, holding a Bachelor's Degree in Information Technology, pursuing a Master's Degree in Business Analytics and Information Systems, seeking opportunities to leverage skills and contribute to innovative projects.
+            </p>
+
+            <div class="btn-box">
+                <a href="mailto:sharvarimore90@gmail.com" class="btn">Hire Me Now ! <i class='bx bx-right-arrow-alt' ></i></a>
+                <a href="img/Sharvari More - Resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+            </div>
+
+            <div class="social-media">
+                <div class="bg-icon">
+                    <a href="http://www.linkedin.com/in/sharvari-more" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="https://github.com/SharvariMore" target="_blank"><i class='bx bxl-github'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="https://instagram.com/sharvari_more_10" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="https://facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="img-hero">
+            <img src="img/Profile.png" alt="">
+            <div class="rotate-text">
+                <div class="text">
+                    <p>I'm Frontend Developer And Backend Developer And Designer</p>
+                </div>
+                <span><i></i></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/LinkedIn Profile.jpeg" alt="" class="aboutHero">
+            <div class="showcase-ring">
+                <img src="shapes/ring.png" class="ring">
+                <img src="shapes/circle.png" class="circle">
+            </div>
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <h3>2.5+ Year's Experience on UI Designing</h3>
+            <!--<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint voluptatem autem ex in. Temporibus et maiores ipsum recusandae voluptas consequatur!</p>-->
+            <div class="about-btn">
+                <button class="active">Main Skills</button>
+                <button>Experience</button>
+                <button>Education</button>
+            </div>
+            <div class="content-btn">
+                <div class="content">
+                    <div class="text-box">
+                        <p>User Experience Design - UI / UX</p>
+                        <span>HTML, CSS, JavaScript, React, Figma</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Database Management</p>
+                        <span>MySQL, MongoDB</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Frameworks</p>
+                        <span>Microsoft Suite, NodeJS, ExpressJS, AWS, Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="text-box" id="infosys">
+                        <p>Associate Business Analyst</p>
+                        <span>Infosys (2022 - 2023)</span>
+                        <button class="exp-button1" onclick="showSkills('infosys')">Show More</button>
+                        <br/><span>Pune, India</span>
+                        
+                    </div>
+                        <div class="text-box" id="capgemini">
+                        <p>Analyst</p>
+                        <span>Capgemini (2020 - 2022)</span>
+                        <button class="exp-button2" onclick="showSkills('capgemini')">Show More</button>
+                        <br/><span>Pune, India</span>
+                    </div>
+
+                    <div id="popup" class="popup">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <div id="skillsContent"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="content">
+                    <div class="text-box" id="masters">
+                        <p>Masters' in Business Analytics and Information Systems </p>
+                        <span>University of South Florida, Tampa, Florida (2023 - 2025)</span>
+                        <br/><span>GPA: 3.89/4</span>
+                        <button class="popup-btn1" onclick="showPopup('usf-popup')">Show Subjects</button>
+
+                    </div>
+                    <div class="text-box" id="bachelors">
+                        <p>Bachelors' in Information Technology </p>
+                        <span>Pune University, Pune, India (2016 - 2020)</span>
+                        <br/><span>GPA: 3.3/4</span>
+                        <button class="popup-btn2" onclick="showPopup('pune-popup')">Show Subjects</button>
+                    </div>
+
+                    <div class="popup" id="usf-popup">
+                        <!--<h2>University of South Florida Subjects</h2>-->
+                        <ul>
+                            <li>Big Data</li>
+                            <li>Advance Database Management Systems</li>
+                            <li>Seminar on Software Testing</li>
+                            <li>Project Management</li>
+                            <li>Data Mining</li>
+                            <li>Advanced Systems and Analysis Design</li>
+                            <li>Analytical Methods for Business</li>
+                        </ul>
+                        <span class="close" onclick="educlosePopup('usf-popup')">&times;</span>
+                    </div>
+                    
+                    <div class="popup" id="pune-popup">
+                        <!--<h2>Pune University Subjects</h2>-->
+                        <ul>
+                            <li>Cloud Computing</li>
+                            <li>Web Programming</li>
+                            <li>Business Architecture and Intelligence</li>
+                            <li>Object Oriented Programming</li>
+                            <li>Software Design and Modelling</li>
+                            <li>Database Management Systems</li>
+                            <li>Analysis of Algorithms</li>
+                        </ul>
+                        <span class="close" onclick="educlosePopup('pune-popup')">&times;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cvContent">
+                <a href="img/Sharvari More - Resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="main-text">
+            <h2 class="heading">My Services</h2>
+            <span>what i will do for you</span>
+        </div>
+
+        <div class="allServices">
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-layer' ></i>
+                    <span></span>
+                </div>
+                <h3>UI / UX Design</h3>
+                <p>Seasoned professional with expertise in UI designing, creating visually stunning user interfaces that seamlessly blend form and function to enhance the overall user experience.</p>
+                <a href="https://github.com/SharvariMore/Figma-Carousel" class="readMore" target="_blank">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-desktop' ></i>
+                    <span></span>
+                </div>
+                <h3>Responsive Design</h3>
+                <p>Proficient in optimizing website responsiveness across various devices with flexible layouts and media queries, delivering results of exceptional quality that surpass expectations.</p>
+                <a href="https://vikram-travels.netlify.app" class="readMore" target="_blank">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-code-alt' ></i>
+                    <span></span>
+                </div>
+                <h3>JS Frameworks</h3>
+                <p>Acquainted in widely used Javascript frameworks as React, NodeJS and ExpressJS, ensuring cutting-edge and impactful contributions to every project.</p>
+                <a href="https://github.com/SharvariMore/Movie-app" class="readMore" target="_blank">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bxs-party' ></i>
+                    <span></span>
+                </div>
+                <h3>Version Control</h3>
+                <p>Accomplished in harnessing the power of version control systems such as Git to foster collaborative development and meticulously track the evolution of projects.</p>
+                <a href="https://github.com/SharvariMore" class="readMore" target="_blank">Read More</a>
+            </div>
+        </div>
+
+        <!--<div class="proposal">
+            <div class="text-box">
+                <span>Get It Touch</span>
+                <h3>Have a Project On Your Mind</h3>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            <img src="img/support.png" class="first">
+        </div> 
+    -->
+
+        <div class="showcase">
+            <img src="shapes/ring.png" class="ring">
+            <img src="shapes/circle.png" class="circle">
+            <img src="shapes/circle.png" class="circle2">
+            <img src="shapes/circle.png" class="circle3">
+            <img src="shapes/half-ring.png" class="half-ring">
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <h2 class="heading">My Projects</h2>
+            <span>explore more on my work</span>
+        </div>
+        <div class="fillter-buttons">
+            <button class="button mixitup-control-active" data-filter="all">All Work</button>
+            <button class="button" data-filter=".web">Web Development</button>
+            <button class="button" data-filter=".uiux">UI/UX Design</button>
+            <button class="button" data-filter=".branding">Branding Design</button>
+            <button class="button" data-filter=".gaming">Gaming Applications</button>
+        </div>
+
+        <div class="portfolio-gallery">
+            <div class="portfolio-box mix uiux">
+                <div class="portfolio-content">
+                    <h3>Figma Carousel</h3>
+                    <p>A Figma carousel website to navigate between 3 different types of drinks</p>
+                    <a href="https://github.com/SharvariMore/Figma-Carousel" target="_blank" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/figma_carousel.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>YouTube Clone</h3>
+                    <p>Website features the UI development of YouTube  using HTML, CSS and JavaScript</p>
+                    <a href="https://github.com/SharvariMore/Youtube-Clone" target="_blank" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/youtube_clone.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>Movie App</h3>
+                    <p>Dynamic React app displaying list of movies with their rating through API intgeration</p>
+                    <a href="https://github.com/SharvariMore/Movie-app" target="_blank" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/movie.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix gaming">
+                <div class="portfolio-content">
+                    <h3>Color Change Game</h3>
+                    <p>Gaming app built on React to display color name & hex value in square with toggle option</p>
+                    <a href="https://github.com/SharvariMore/Color-Change-React-app" target="_blank" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/colorchange_game.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>NodeJS Chat App</h3>
+                    <p>Real time chat app featuring various features utilising React as UI and NodeJS at backend</p>
+                    <a href="https://github.com/SharvariMore/NodeJS-Chat-App" target="_blank" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/chat_app.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>Food Recipe App</h3>
+                    <p>Inclusive React app displaying food recipes for selected dish through API integration</p>
+                    <a href="https://flavor-fiesta.netlify.app" target="_blank" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/food_recipe.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix gaming">
+                <div class="portfolio-content">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>JS Game declares 'X' or 'O' as winner when 3 similar match else declare tie when filled</p>
+                    <a href="https://github.com/SharvariMore/Tic-Tac-Toe-Game" target="_blank" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/tictac_game.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix uiux">
+                <div class="portfolio-content">
+                    <h3>Cafe Website</h3>
+                    <p>Cafe Website showcasing HTML and CSS basics alongwith responsiveness</p>
+                    <a href="https://github.com/SharvariMore/Simple-website" target="_blank" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/cafe_website.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix gaming">
+                <div class="portfolio-content">
+                    <h3>Hanging Man Game</h3>
+                    <p>React Game challenge to guess hidden word with wrong letters creating a HangingMan</p>
+                    <a href="https://github.com/SharvariMore/HangingMan-Game-App" target="_blank" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/hangman_game.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix branding">
+                <div class="portfolio-content">
+                    <h3>Vikram Travels</h3>
+                    <p>Holistic React website efficiently managing cab services in Maharashtra, India</p>
+                    <a href="https://vikram-travels.netlify.app" target="_blank" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/vikram_travels.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--<section class="blog" id="blog">
+        <div class="main-text">
+            <h2 class="heading">Blog</h2>
+            <span>Latest News & Post</span>
+        </div>
+
+        <div class="blog-box swiper mySwiper">
+            <div class="cards swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/1.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mobile App Landing Page</h2>
+                        <span class="date">Sunday, Jan 14, 2023</span>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/2.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mobile App Landing Page</h2>
+                        <span class="date">Sunday, Jan 14, 2023</span>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/3.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mobile App Landing Page</h2>
+                        <span class="date">Sunday, Jan 14, 2023</span>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/4.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mobile App Landing Page</h2>
+                        <span class="date">Sunday, Jan 14, 2023</span>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/5.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mobile App Landing Page</h2>
+                        <span class="date">Sunday, Jan 14, 2023</span>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/6.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mobile App Landing Page</h2>
+                        <span class="date">Sunday, Jan 14, 2023</span>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="showcase">
+            <img src="shapes/ring.png" class="ring">
+            <img src="shapes/second-circle.png" class="second-circle">
+            <img src="shapes/circle.png" class="circle">
+            <img src="shapes/half-ring.png" class="half-ring">
+        </div>
+
+    </section>-->
+
+    <div class="skills">
+        <div class="container">
+            <div class="skillBox">
+                <div class="main-text">
+                    <h2 class="heading">My Skills</h2>
+                    <span>Let Me Help you</span>
+                </div>
+                <div class="skill-wrap">
+                    <div class="skill">
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                        </linearGradient>
+                                    </defs>
+                                        <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                               </svg>
+                               <h2 class="counter">
+                                <span data-target="95">0</span>%
+                               </h2>
+                            </div>
+                        </div>
+                        <div class="sk-title">
+                            HTML
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                        </linearGradient>
+                                    </defs>
+                                        <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                               </svg>
+                               <h2 class="counter">
+                                <span data-target="90">0</span>%
+                               </h2>
+                            </div>
+                        </div>
+                        <div class="sk-title">
+                            CSS
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                        </linearGradient>
+                                    </defs>
+                                        <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                               </svg>
+                               <h2 class="counter">
+                                <span data-target="80">0</span>%
+                               </h2>
+                            </div>
+                        </div>
+                        <div class="sk-title">
+                            JavaScript
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                        </linearGradient>
+                                    </defs>
+                                        <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                               </svg>
+                               <h2 class="counter">
+                                <span data-target="78">0</span>%
+                               </h2>
+                            </div>
+                        </div>
+                        <div class="sk-title">
+                            React
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="down-box" id="contact">
+        <div class="contactSkills">
+            <div class="contact-info">
+                <div class="main-text">
+                    <h2 class="heading">Contact Me</h2>
+                    <span>get in touch with me</span>
+                </div>
+                <form id="myForm">
+                    <div class="input-box">
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                    <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+                    <div class="formBtn">
+                        <button type="button" onclick="sendEmail()" class="btn">Send Message</button>
+                    </div>
+                </form>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2023 by <span>Sharvari More</span> || All Right Reservd.</p>
+    </footer>
+
+    <div id="progress">
+        <span id="progress-value">
+            <i class='bx bxs-chevrons-up' ></i>
+        </span>
+    </div>
+
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
