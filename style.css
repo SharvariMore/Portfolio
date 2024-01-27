@@ -205,7 +205,7 @@ section{
 .btn-box{
     display: flex;
     justify-content: space-between;
-    width: 320px;
+    width: 335px;
     margin-top: 2rem;
     margin-bottom: 6rem;
 }
@@ -1235,7 +1235,8 @@ footer{
         width: 23.8rem;
     }
     .btn-box{
-        width: 266px;
+        width: 100%;
+        justify-content: space-between;
         margin-bottom: 3rem;
     }
     .about-btn button{
@@ -1259,4 +1260,5 @@ footer{
     .popup {
         transform: none;
     }
+
 }
